@@ -19,5 +19,84 @@ body {
      object-fit: cover;
   background-size: cover;
   height: 695px;
-  transform: scale(1.1);
+  background-size: 110%;
+}
+.escala--firstpage::after {
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, black);
+}
+
+.escala--secondpage {
+  display: flex;
+  background-image: url("/dist/img/94c29aca8e7e6b5d_org20281293.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  height: 695px;
+  background-size: 100%;
+}
+.escala--secondpage::after {
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, black);
+}
+
+.space {
+  display: block;
+  padding: 0.2rem;
+}
+
+.builtin--header {
+  display: flex;
+  justify-content: center;
+  padding-top: 4.5rem;
+  position: absolute;
+  width: 100%;
+}
+.builtin--header .builtin--header_container {
+  display: flex;
+  align-items: center;
+  gap: 40rem;
+}
+.builtin--header .builtin--header_container .header--logo {
+  cursor: pointer;
+}
+.builtin--header .builtin--header_container .header--logo img {
+  width: 164.19px;
+  height: 41.36px;
+}
+.builtin--header .builtin--header_container .header--menu--button_container {
+  display: flex;
+  width: 554.66px;
+  justify-content: end;
+  text-align: end;
+  height: 29.68px;
+  align-items: center;
+}
+.builtin--header .builtin--header_container .header--menu--button_container .header--menu--button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 45.85px;
+  height: 45.85px;
+}
+.builtin--header .builtin--header_container .header--menu--button_container .header--menu--button:hover {
+  gap: 0.5rem;
+}
+.builtin--header .builtin--header_container .header--menu--button_container .header--menu--button span {
+  display: block;
+  width: 25px;
+  height: 1px;
+  background: white;
 }/*# sourceMappingURL=main.css.map */
