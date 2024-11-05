@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: black;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.escala--firstpage {
+  display: flex;
+  background-image: url("/dist/img/CC85020in20the20desert20Gradient3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  height: 695px;
+  transform: scale(1.1);
+}/*# sourceMappingURL=main.css.map */
