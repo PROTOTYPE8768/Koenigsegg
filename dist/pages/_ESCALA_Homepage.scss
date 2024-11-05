@@ -5,34 +5,31 @@ body{
 }
 .escala--firstpage{
     display: flex;
-    background-image: url('/dist/img/CC85020in20the20desert20Gradient3.png');
+    background-image: url('/dist/img/CC85020in20the20desert20Gradient4.png');
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-    background-size: cover;
-    height: 695px; //695
     background-size: 110%;
+    height: 100vh;
     &::after {
         content: "";
         bottom: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, black);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black);
     }
 }
 .escala--secondpage{
     display: flex;
-    background-image: url('/dist/img/94c29aca8e7e6b5d_org20281293.jpeg');
+    background-image: url('/dist/img/94c29aca8e7e6b5d_org2028129.jpeg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:55.5% center;
     object-fit: cover;
-    background-size: cover;
-    height: 695px; //695
-    background-size: 100%;
+    height: 155vh;
+    background-size: 180%;
     &::after {
         content: "";
         top: 0;
-        
         width: 100%;
         height: 100%;
         background: linear-gradient(to top, rgba(0, 0, 0, 0)40%, black);
