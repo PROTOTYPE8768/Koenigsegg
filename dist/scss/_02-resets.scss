@@ -1,5 +1,13 @@
-body{
+@font-face{
+    font-family: 'Gustavo';
+    src: url(/dist/fonts/Gustavo_trial-Regular-BF65f254e22bb0e.otf);
+}
+
+*{
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Gustavo', sans-serif;
 }
