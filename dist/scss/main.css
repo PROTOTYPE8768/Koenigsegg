@@ -10,6 +10,19 @@ body {
   overflow-x: hidden;
 }
 
+.green-background {
+  position: fixed;
+  background: rgb(81, 107, 101);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.green-background.open {
+  display: block;
+}
+
 .escala--firstpage {
   display: flex;
   background-image: url("/dist/img/CC85020in20the20desert20Gradient4.png");
@@ -51,10 +64,24 @@ body {
   padding: 0.2rem;
 }
 
+.header-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+}
+.header-content .logo {
+  background: url(/dist/img/CC850_w_logo.svg);
+}
+
 .builtin--header {
   display: flex;
   justify-content: center;
-  padding-top: 4.5rem;
   position: absolute;
   width: 100%;
 }
@@ -64,6 +91,10 @@ body {
   gap: 40rem;
 }
 .builtin--header .builtin--header_container .header--logo {
+  display: flex;
+  position: absolute;
+  left: 5rem;
+  top: 4.5rem;
   cursor: pointer;
 }
 .builtin--header .builtin--header_container .header--logo img {
@@ -73,15 +104,17 @@ body {
 .builtin--header .builtin--header_container .header--menu--button_container {
   display: flex;
   width: 554.66px;
+  position: absolute;
+  right: 4.35rem;
+  top: 4.28rem;
   justify-content: end;
-  text-align: end;
-  height: 29.68px;
+  height: 45.68px;
   align-items: center;
 }
 .builtin--header .builtin--header_container .header--menu--button_container .header--menu--button {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.29rem;
   transition: 0.2s ease;
   cursor: pointer;
   align-items: center;
@@ -94,7 +127,7 @@ body {
 }
 .builtin--header .builtin--header_container .header--menu--button_container .header--menu--button span {
   display: block;
-  width: 25px;
-  height: 1px;
+  width: 25.5px;
+  height: 1.4px;
   background: white;
 }/*# sourceMappingURL=main.css.map */
