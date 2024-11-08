@@ -48,25 +48,51 @@ body{
         background: linear-gradient(to top, rgba(0, 0, 0, 0)40%, black);
     }
 }
-.space{
-    display: block;
-    padding: .2rem;
 
-}
 
-.header-content-container{
-    
+.escala--firstpage_container{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    
+    width: 100%;
     
     position: absolute;
-    width: 100%;
+    .escala-firstpage-main-content{
+        display: flex;
+        
+        
+         
+         .firstpage-main-content-container{
+             display: flex;
+             h1{
+                position: absolute;
+                left: 5rem;
+                top: 13.7rem;
+                img{
+                    width: 397.24px;
+                    height: 71.5px;
+                    
+                }
+             }
+             nav{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                gap: 1.2rem;
+                right: 5rem;
+                top: 13.88rem;
+                a{
+                    font-family: "Host Grotesk";
+                    font-size: 16.8px;
+                }
+                img{
+                    filter: invert(1);
+                    height: 16.54px;
+                    width: 16.54px;
+                }
+                
+             }
+             
+         }
+     }
 }
-.header-content{
-    display: flex;
-    .logo{
-        background: url(/dist/img/CC850_w_logo.svg);
-    }
-}
+
