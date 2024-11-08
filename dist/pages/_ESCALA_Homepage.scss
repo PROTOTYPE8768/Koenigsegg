@@ -3,6 +3,19 @@ body{
     list-style: none;
     overflow-x: hidden;
 }
+.green-background {
+    position: fixed;
+    background: rgb(81, 107, 101);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+    
+  }
+  .green-background.open{
+      display: block;
+  }
+
 .escala--firstpage{
     display: flex;
     background-image: url('/dist/img/CC85020in20the20desert20Gradient4.png');
@@ -39,4 +52,21 @@ body{
     display: block;
     padding: .2rem;
 
+}
+
+.header-content-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    position: absolute;
+    width: 100%;
+}
+.header-content{
+    display: flex;
+    .logo{
+        background: url(/dist/img/CC850_w_logo.svg);
+    }
 }
