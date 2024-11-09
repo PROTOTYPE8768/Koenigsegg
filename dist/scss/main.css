@@ -13,7 +13,7 @@
 
 .green-background {
   position: fixed;
-  background: rgb(81, 107, 101);
+  background: #687c7b;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -46,6 +46,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black);
+  pointer-events: none;
 }
 .escala--body .escala--firstpage .escala--firstpage_container {
   display: flex;
@@ -132,7 +133,8 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, black);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, black), linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, black);
+  pointer-events: none;
 }
 .escala--body .escala--secondpage .escala--secondpage_container {
   display: flex;
@@ -270,6 +272,141 @@
   margin-top: 5px;
 }
 
+.escala-thirdpage .Discover-buttons {
+  display: inline-block;
+  margin-top: 4rem;
+  padding: 1rem;
+  border: 1px solid;
+  text-decoration: none;
+}
+.escala-thirdpage .third-part {
+  padding: 5rem 5rem 10rem 10rem;
+}
+.escala-thirdpage .part-wrapper {
+  display: grid;
+  grid-template-areas: "achievements innovations" "text img";
+  grid-auto-columns: 1.2fr 2fr;
+}
+.escala-thirdpage .tech-ach {
+  margin-bottom: 8rem;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  font-weight: 300;
+}
+.escala-thirdpage .title-innovations {
+  position: relative;
+  font-size: 6rem;
+  align-self: end;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+}
+.escala-thirdpage .title-innovations .in-house {
+  position: absolute;
+  bottom: 5rem;
+  right: 17rem;
+  white-space: nowrap;
+}
+.escala-thirdpage .text-and-button {
+  --_moving-speed: 4.6;
+  animation: moving-down ease-in-out;
+}
+.escala-thirdpage .text-and-button p {
+  width: 20rem;
+  line-height: 1.5rem;
+}
+.escala-thirdpage img {
+  --_moving-speed: 3;
+  margin-top: 5rem;
+  animation: moving-up ease-in-out;
+  width: 100%;
+}
+
+.escala-fourthpage {
+  margin-top: 6rem;
+  background: white;
+}
+.escala-fourthpage * {
+  color: black;
+}
+.escala-fourthpage * img {
+  width: 100%;
+}
+.escala-fourthpage .fourth-part {
+  padding: 5rem 10rem 10rem 10rem;
+}
+.escala-fourthpage .fourth-part .part-wrapper {
+  display: flex;
+}
+.escala-fourthpage .fourth-part .part-wrapper > * {
+  flex: 1;
+}
+.escala-fourthpage .fourth-part:nth-of-type(even) .part-wrapper {
+  flex-direction: row-reverse;
+}
+.escala-fourthpage .fourth-part:nth-of-type(even) .img-wrapper {
+  text-align: end;
+}
+.escala-fourthpage .fourth-part:nth-of-type(even) .main-top {
+  text-align: start;
+}
+.escala-fourthpage .fourth-part:nth-of-type(even) .text-and-button {
+  align-self: center;
+  margin-left: 0;
+}
+.escala-fourthpage img {
+  max-width: 80%;
+  --_moving-speed: 4;
+  animation: moving-up ease-in-out;
+}
+.escala-fourthpage .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.7rem;
+}
+.escala-fourthpage .text .main-top {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: end;
+}
+.escala-fourthpage .text .why-title {
+  line-height: 3.5rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.escala-fourthpage .text .why-title span {
+  margin-left: 8rem;
+}
+.escala-fourthpage .text .text-and-button {
+  max-width: 20rem;
+  place-self: end;
+  margin-right: 6rem;
+  --_moving-speed: 0.3;
+  animation: moving-down ease-in-out;
+}
+.escala-fourthpage hr {
+  margin-top: 8rem;
+}
+
+@keyframes moving-down {
+  to {
+    transform: translateY(calc(var(--_moving-speed) * 3rem));
+  }
+}
+@keyframes moving-up {
+  to {
+    transform: translateY(calc(var(--_moving-speed) * -2rem));
+  }
+}
+.escala-thirdpage .text-and-button,
+.escala-fourthpage .text-and-button,
+.escala-thirdpage img,
+.escala-fourthpage img {
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 100%;
+}
+
 @keyframes fadeout {
   to {
     transform: translateX(-1rem);
@@ -280,6 +417,7 @@
   justify-content: center;
   position: absolute;
   width: 100%;
+  z-index: 2;
 }
 .builtin--header .builtin--header_container {
   display: flex;
