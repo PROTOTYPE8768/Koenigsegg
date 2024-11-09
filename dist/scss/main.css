@@ -11,13 +11,6 @@
   font-family: "Gustavo", sans-serif;
 }
 
-.escala--body {
-  background: black;
-  list-style: none;
-  overflow-x: hidden;
-  justify-content: center;
-}
-
 .green-background {
   position: fixed;
   background: rgb(81, 107, 101);
@@ -31,7 +24,13 @@
   display: block;
 }
 
-.escala--firstpage {
+.escala--body {
+  background: black;
+  list-style: none;
+  overflow-x: hidden;
+  justify-content: center;
+}
+.escala--body .escala--firstpage {
   display: flex;
   background-image: url("/dist/img/CC85020in20the20desert20Gradient4.png");
   background-repeat: no-repeat;
@@ -41,15 +40,83 @@
   background-size: 110%;
   height: 100vh;
 }
-.escala--firstpage::after {
+.escala--body .escala--firstpage::after {
   content: "";
   bottom: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black);
 }
-
-.escala--secondpage {
+.escala--body .escala--firstpage .escala--firstpage_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content {
+  display: flex;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container {
+  display: flex;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container h1 {
+  position: absolute;
+  left: 5rem;
+  top: 13.7rem;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container h1 img {
+  width: 397.24px;
+  height: 71.5px;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 1.2rem;
+  right: 5rem;
+  top: 13.88rem;
+  cursor: pointer;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav a {
+  font-family: "Host Grotesk";
+  font-size: 16.8px;
+  transition: 0.2s;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  margin-top: 5px;
+  transition: 0.4s ease;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav .arrow-container {
+  display: flex;
+  margin-bottom: 5px;
+  width: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav .arrow-container img {
+  filter: invert(1);
+  height: 16.54px;
+  width: 16.54px;
+  transform: translatex(-1rem);
+  transition: 0.2s ease;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav:hover img {
+  transform: translateX(0rem);
+  animation: fadeout 0s ease 0.2s forwards;
+}
+.escala--body .escala--firstpage .escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav:hover a::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 1px;
+  background: #f6be00;
+  margin-top: 5px;
+}
+.escala--body .escala--secondpage {
   display: flex;
   justify-content: center;
   background-image: url("/dist/img/94c29aca8e7e6b5d_org2028129.jpeg");
@@ -60,64 +127,24 @@
   height: 155vh;
   background-size: 180%;
 }
-.escala--secondpage::after {
+.escala--body .escala--secondpage::after {
   content: "";
   top: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, black);
 }
-
-.escala--firstpage_container {
+.escala--body .escala--secondpage .escala--secondpage_container {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  margin-top: 6.5rem;
   position: absolute;
 }
-.escala--firstpage_container .escala-firstpage-main-content {
-  display: flex;
-}
-.escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container {
-  display: flex;
-}
-.escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container h1 {
-  position: absolute;
-  left: 5rem;
-  top: 13.7rem;
-}
-.escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container h1 img {
-  width: 397.24px;
-  height: 71.5px;
-}
-.escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  gap: 1.2rem;
-  right: 5rem;
-  top: 13.88rem;
-}
-.escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav a {
-  font-family: "Host Grotesk";
-  font-size: 16.8px;
-}
-.escala--firstpage_container .escala-firstpage-main-content .firstpage-main-content-container nav img {
-  filter: invert(1);
-  height: 16.54px;
-  width: 16.54px;
-}
-
-.escala--secondpage_container {
-  display: flex;
-  margin-top: 6rem;
-  position: absolute;
-}
-.escala--secondpage_container .secondpage--tablist-container {
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage--tablist-container {
   display: flex;
   position: absolute;
   justify-content: center;
 }
-.escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list {
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list {
   position: absolute;
   display: flex;
   width: 73.5vw;
@@ -125,22 +152,129 @@
   height: 48.23px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.44);
 }
-.escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list .tab--button {
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list .tab--button {
   display: flex;
   gap: 1rem;
   font-family: "host grotesk";
 }
-.escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list .tab--button span {
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list .tab--button span {
   width: 179.81px;
   font-size: 19.5px;
 }
-.escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list :nth-child(2) span {
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list :nth-child(2) span {
   width: 222px;
 }
-.escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list :nth-child(3) span {
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage--tablist-container .secondpage--tab-list :nth-child(3) span {
   width: 233.9px;
 }
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage-tab-title {
+  display: flex;
+  position: absolute;
+  right: -12rem;
+  margin-top: 7rem;
+  flex-direction: column;
+  width: 756px;
+  line-height: 55px;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage-tab-title .large-line {
+  display: flex;
+  flex-direction: column;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage-tab-title .large-line span {
+  font-size: 63.908px;
+  text-transform: uppercase;
+  font-family: "Gustavo";
+}
+.escala--body .escala--secondpage .escala--secondpage_container .secondpage-tab-title .large-line:nth-child(2) {
+  text-align: end;
+}
+.escala--body .escala--secondpage .escala--secondpage_container nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 1.2rem;
+  left: 25rem;
+  top: 8.2rem;
+  width: 10rem;
+  cursor: pointer;
+}
+.escala--body .escala--secondpage .escala--secondpage_container nav a {
+  font-family: "Host Grotesk";
+  font-size: 16.8px;
+  transition: 0.2s;
+}
+.escala--body .escala--secondpage .escala--secondpage_container nav .arrow-container {
+  display: flex;
+  width: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.escala--body .escala--secondpage .escala--secondpage_container nav .arrow-container img {
+  filter: invert(1);
+  height: 16.54px;
+  width: 16.54px;
+  transform: translatex(-1rem);
+  transition: 0.2s ease;
+}
+.escala--body .escala--secondpage .escala--secondpage_container nav:hover img {
+  transform: translateX(0rem);
+  animation: fadeout 0s ease 0.2s forwards;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .second-page-bottom-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 1.2rem;
+  width: 290.48px;
+  left: -35.5rem;
+  top: 49rem;
+  cursor: pointer;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .second-page-bottom-button a {
+  font-family: "Host Grotesk";
+  font-size: 16.8px;
+  transition: 0.2s;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .second-page-bottom-button a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  margin-top: 5px;
+  transition: 0.4s ease;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .second-page-bottom-button .arrow-container {
+  display: flex;
+  margin-bottom: 5px;
+  width: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .second-page-bottom-button .arrow-container img {
+  filter: invert(1);
+  height: 16.54px;
+  width: 16.54px;
+  transform: translatex(-1rem);
+  transition: 0.2s ease;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .second-page-bottom-button:hover img {
+  transform: translateX(0rem);
+  animation: fadeout 0s ease 0.2s forwards;
+}
+.escala--body .escala--secondpage .escala--secondpage_container .second-page-bottom-button:hover a::after {
+  content: "";
+  display: block;
+  width: 253.8px;
+  height: 1px;
+  background: #f6be00;
+  margin-top: 5px;
+}
 
+@keyframes fadeout {
+  to {
+    transform: translateX(-1rem);
+  }
+}
 .builtin--header {
   display: flex;
   justify-content: center;
