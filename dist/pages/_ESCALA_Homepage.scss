@@ -1,9 +1,3 @@
-.escala--body{
-    background: black;
-    list-style: none;
-    overflow-x: hidden;
-    justify-content: center;
-}
 .green-background {
     position: fixed;
     background: rgb(81, 107, 101);
@@ -12,138 +6,314 @@
     z-index: 1;
     display: none;
     
-  }
-  .green-background.open{
+}
+.green-background.open{
       display: block;
-  }
-
-.escala--firstpage{
-    display: flex;
-    background-image: url('/dist/img/CC85020in20the20desert20Gradient4.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    background-size: 110%;
-    height: 100vh;
-    &::after {
-        content: "";
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black);
-    }
 }
-.escala--secondpage{
-    display: flex;
+.escala--body{
+    background: black;
+    list-style: none;
+    overflow-x: hidden;
     justify-content: center;
-    
-    background-image: url('/dist/img/94c29aca8e7e6b5d_org2028129.jpeg');
-    background-repeat: no-repeat;
-    background-position:55.5% center;
-    object-fit: cover;
-    height: 155vh;
-    background-size: 180%;
-    &::after {
-        content: "";
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0)40%, black);
-    }
-}
-
-
-.escala--firstpage_container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-    position: absolute;
-    .escala-firstpage-main-content{
+    .escala--firstpage{
         display: flex;
+        background-image: url('/dist/img/CC85020in20the20desert20Gradient4.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        background-size: 110%;
+        height: 100vh;
+        &::after {
+            content: "";
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black);
+        }
+        .escala--firstpage_container{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            
+            position: absolute;
+            .escala-firstpage-main-content{
+                display: flex;
+                
+                
+                 
+                 .firstpage-main-content-container{
+                     display: flex;
+                     h1{
+                        position: absolute;
+                        left: 5rem;
+                        top: 13.7rem;
+                        img{
+                            width: 397.24px;
+                            height: 71.5px;
+                            
+                        }
+                     }
+                     nav{
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        gap: 1.2rem;
+                        right: 5rem;
+                        top: 13.88rem;
+                        cursor: pointer;
+                        a{
+                            font-family: "Host Grotesk";
+                            font-size: 16.8px;
+                            transition: .2s;
+                            &::after{
+                                content: "";
+                                display: block;
+                                width: 0px;
+                                height: 1px;
+                                margin-top: 5px;
+                                transition: .4s ease;
+                            }
+                        }
         
+                        .arrow-container{
+                            display: flex;
+                            margin-bottom: 5px;
+                            width: 1rem;
+                            
+                            overflow: hidden;
+                            position: relative;
+                            img{
+                                filter: invert(1);
+                                height: 16.54px;
+                                width: 16.54px;
+                                transform: translatex(-1rem);
+                                transition: .2s ease;
         
-         
-         .firstpage-main-content-container{
-             display: flex;
-             h1{
+                            }  
+                        }
+                        &:hover{
+                            img{
+                                transform: translateX(0rem);
+                                animation: fadeout 0s ease .2s forwards;
+                            }
+                            a{
+                                
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    width: 65px;
+                                    height: 1px;
+                                    background: #f6be00;
+                                    margin-top: 5px;
+                                }
+                            }
+                            
+                        }
+                     }
+                     
+                 }
+             }
+        }
+    }
+    .escala--secondpage{
+        display: flex;
+        justify-content: center;
+        
+        background-image: url('/dist/img/94c29aca8e7e6b5d_org2028129.jpeg');
+        background-repeat: no-repeat;
+        background-position:55.5% center;
+        object-fit: cover;
+        height: 155vh;
+        background-size: 180%;
+        &::after {
+            content: "";
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0)40%, black);
+        }
+        .escala--secondpage_container{
+            display: flex;
+            margin-top: 6.5rem;
+            position: absolute;
+            
+            .secondpage--tablist-container{
+                display: flex;
                 position: absolute;
-                left: 5rem;
-                top: 13.7rem;
-                img{
-                    width: 397.24px;
-                    height: 71.5px;
+                justify-content: center;
+                
+                .secondpage--tab-list{
+                    position: absolute;
+                    display: flex;
+                    width: 73.5vw;
+                    gap: 1rem;
+                    height: 48.23px;
+                    
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.44);
+                    .tab--button{
+                        display: flex;
+                        gap: 1rem;
+                        font-family: 'host grotesk';
+                        
+                        span{
+                            width: 179.81px;
+                            font-size: 19.5px;
+                            
+                            
+                        }
+                        
+                        
+                    }
+                    :nth-child(2){
+                        span{
+                            width: 222px;
+                        }
+                    }
+                    :nth-child(3){
+                        span{
+                            width: 233.9px;
+                        }
+                    }
                     
                 }
-             }
-             nav{
+            }
+            .secondpage-tab-title{
+                display: flex;
+                position: absolute;
+                right: -12rem;
+                margin-top: 7rem;
+                flex-direction: column;
+                width: 756px;
+                line-height: 55px;
+        
+                .large-line{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        font-size: 63.908px;
+                        text-transform: uppercase;
+                        font-family: 'Gustavo';
+                    }
+                    
+                }
+                .large-line:nth-child(2){
+                    text-align: end;
+                }
+            }
+            nav{
                 display: flex;
                 align-items: center;
                 position: absolute;
                 gap: 1.2rem;
-                right: 5rem;
-                top: 13.88rem;
+                left: 25rem;
+                top: 8.2rem;
+                width: 10rem;
+                cursor: pointer;
+                
                 a{
                     font-family: "Host Grotesk";
                     font-size: 16.8px;
-                }
-                img{
-                    filter: invert(1);
-                    height: 16.54px;
-                    width: 16.54px;
-                }
-                
-             }
-             
-         }
-     }
-}
-
-.escala--secondpage_container{
-    display: flex;
-    margin-top: 6rem;
-    position: absolute;
-    
-    .secondpage--tablist-container{
-        display: flex;
-        position: absolute;
-        justify-content: center;
+                    transition: .2s;
         
-        .secondpage--tab-list{
-            position: absolute;
-            display: flex;
-            width: 73.5vw;
-            gap: 1rem;
-            height: 48.23px;
-            
-            border-bottom: 1px solid rgba(255, 255, 255, 0.44);
-            .tab--button{
-                display: flex;
-                gap: 1rem;
-                font-family: 'host grotesk';
-                
-                span{
-                    width: 179.81px;
-                    font-size: 19.5px;
+                }
+        
+                .arrow-container{
+                    display: flex;
                     
+                    width: 1rem;
+                    
+                    overflow: hidden;
+                    position: relative;
+                    img{
+                        filter: invert(1);
+                        height: 16.54px;
+                        width: 16.54px;
+                        transform: translatex(-1rem);
+                        transition: .2s ease;
+        
+                    }  
+                }
+                &:hover{
+                    img{
+                        transform: translateX(0rem);
+                        animation: fadeout 0s ease .2s forwards;
+                    }
+        
                     
                 }
-                
-                
-            }
-            :nth-child(2){
-                span{
-                    width: 222px;
-                }
-            }
-            :nth-child(3){
-                span{
-                    width: 233.9px;
-                }
-            }
-            
+             }
+            .second-page-bottom-button{
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        gap: 1.2rem;
+                        width: 290.48px;
+                        left: -35.5rem;
+                        top: 49rem;
+                        cursor: pointer;
+                        a{
+                            font-family: "Host Grotesk";
+                            font-size: 16.8px;
+                            transition: .2s;
+                            &::after{
+                                content: "";
+                                display: block;
+                                width: 0px;
+                                height: 1px;
+                                margin-top: 5px;
+                                transition: .4s ease;
+                            }
+                        }
+        
+                        .arrow-container{
+                            display: flex;
+                            margin-bottom: 5px;
+                            width: 1rem;
+                            
+                            overflow: hidden;
+                            position: relative;
+                            img{
+                                filter: invert(1);
+                                height: 16.54px;
+                                width: 16.54px;
+                                transform: translatex(-1rem);
+                                transition: .2s ease;
+        
+                            }  
+                        }
+                        &:hover{
+                            img{
+                                transform: translateX(0rem);
+                                animation: fadeout 0s ease .2s forwards;
+                            }
+                            a{
+                                
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    width: 253.8px;
+                                    height: 1px;
+                                    background: #f6be00;
+                                    margin-top: 5px;
+                                }
+                            }
+                            
+                        }
+                     }
         }
     }
 }
 
+
+
+
+
+
+
+
 //nagkakaroon ng margin tas nag iiba ng width
+@keyframes fadeout {
+    to{
+        transform: translateX(-1rem);
+    }
+}
