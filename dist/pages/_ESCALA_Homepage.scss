@@ -1,6 +1,6 @@
 .green-background {
     position: fixed;
-    background: rgb(81, 107, 101);
+    background: #687c7b;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -29,6 +29,7 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black);
+            pointer-events: none;
         }
         .escala--firstpage_container{
             display: flex;
@@ -130,8 +131,12 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0)40%, black);
+            background: 
+            linear-gradient(to top, rgba(0, 0, 0, 0) 40%, black),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, black);
+            pointer-events: none;
         }
+        
         .escala--secondpage_container{
             display: flex;
             margin-top: 6.5rem;
@@ -302,18 +307,301 @@
                      }
         }
     }
-}
+    .Discover-buttons {
+    display: flex;
+    margin-top: 4rem;
+    padding: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.223);
+    width: 12rem;
+    align-items: center;
+    
+
+    .arrow-container{
+      display: flex;
+      
+      width: 1.1rem;
+      
+      overflow: hidden;
+      position: relative;
+      i{
+          height: 16.54px;
+          width: 16.54px;
+          margin-top: 3px;
+          transform: translatex(-1rem);
+          transition: .2s ease;
+    
+      }  
+    }
+    &:hover{
+      border: 2px solid #f6bd00b3;
+      i{
+        transform: translateX(0rem);
+        animation: fadeout 0s ease .2s forwards;
+      }
+    }
+  }
+.Discover-button {
+    display: flex;
+    margin-top: 4rem;
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.225);
+    width: 8rem;
+    
 
 
-
-
-
-
-
-
-//nagkakaroon ng margin tas nag iiba ng width
-@keyframes fadeout {
-    to{
-        transform: translateX(-1rem);
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s ease;
+    
+    .arrow-container{
+      display: flex;
+      
+      width: 10px;
+      
+      overflow: hidden;
+      position: relative;
+      i{
+          height: 16.54px;
+          width: 16.54px;
+          margin-top: 3px;
+          transform: translatex(-1rem);
+          transition: .2s ease;
+    
+      }  
+    }
+    &:hover{
+      border: 2px solid #f6bd00b3;
+      i{
+        transform: translateX(0rem);
+        animation: fadeout 0s ease .2s forwards;
+      }
     }
 }
+.escala-thirdpage {
+  
+  
+  
+  .third-part {
+    
+    padding: 5rem 5rem 10rem 10rem;
+  }
+
+  .part-wrapper {
+    display: grid;
+    grid-template-areas:
+      "achievements innovations"
+      "text img";
+    grid-auto-columns: 1.2fr 2fr;
+  }
+
+  .tech-ach {
+    margin-bottom: 8rem;
+    font-size: 16.799px;
+    line-height: 1.2rem;
+    font-weight: 300;
+  }
+
+  .title-innovations {
+    position: relative;
+    font-size: 6rem;
+    align-self: end;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 106px;
+    .in-house {
+      position: absolute;
+      bottom: 5rem;
+      right: 19.5rem;
+      white-space: nowrap;
+    }
+  }
+
+  .text-and-button {
+    --_moving-speed: 4.6;
+    animation: moving-down ease-in-out;
+
+    p {
+      width: 20rem;
+      line-height: 1.5rem;
+      font-family: 'Host grotesk';
+    }
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 1.2rem;
+    left: 0rem;
+    top: 8.2rem;
+    width: 16rem;
+    
+    
+    cursor: pointer;
+    
+    a{
+
+        font-family: "Host Grotesk";
+        font-size: 16.8px;
+        transition: .2s;
+       
+
+    }
+
+    .arrow-container{
+        display: flex;
+        width: 1rem;
+        overflow: hidden;
+        position: relative;
+        img{
+            filter: invert(1);
+            height: 16.54px;
+            width: 16.54px;
+            transform: translatex(-1rem);
+            transition: .2s ease;
+
+        }  
+    }
+    &:hover{
+        img{
+            transform: translateX(0rem);
+            animation: fadeout 0s ease .2s forwards;
+        }
+
+        
+    }
+ }
+
+  img {
+    --_moving-speed: 3;
+    margin-top: 5rem;
+    animation: moving-up ease-in-out;
+    width: 100%;
+  }
+}
+.escala-fourthpage {
+  margin-top: 6rem;
+    
+    background: white;
+    *{
+        color: black;
+        img{
+            width: 100%;
+        }
+        p{
+          font-family: 'Host grotesk';
+        }
+        
+    }
+  .fourth-part {
+
+    padding: 5rem 10rem 10rem 10rem;
+    
+    .part-wrapper {
+      display: flex;
+
+      > * {
+        flex: 1;
+      }
+    }
+    .main-top{
+      font-size: 16.799px;
+    }
+    &:nth-of-type(even) {
+      .part-wrapper {
+        flex-direction: row-reverse;
+      }
+
+      .img-wrapper {
+        text-align: end;
+      }
+
+      .main-top {
+        text-align: start;
+        
+      }
+
+      .text-and-button {
+        align-self: center;
+        margin-left: 0;
+      }
+    }
+  }
+
+  img {
+    max-width: 80%;
+    --_moving-speed: 4;
+    animation: moving-up ease-in-out;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.7rem;
+    
+    .main-top {
+      font-weight: 300;
+      font-size: 16.799px;
+      text-align: end;
+    }
+
+    .why-title {
+      line-height: 3.5rem;
+      font-size: 4rem;
+      font-weight: 500;
+      font-size: 63.903px;
+      span {
+        margin-left: 8rem;
+      }
+    }
+
+    .text-and-button {
+      max-width: 20rem;
+      place-self: end;
+      margin-right: 6rem;
+
+      --_moving-speed: 0.3;
+      animation: moving-down ease-in-out;
+    }
+  }
+
+  hr {
+    margin-top: 8rem;
+  }
+}
+
+.escala-thirdpage .text-and-button,
+.escala-fourthpage .text-and-button,
+.escala-thirdpage img,
+.escala-fourthpage img {
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 100%;
+}
+
+@keyframes moving-down {
+  to {
+    transform: translateY(calc(var(--_moving-speed) * 3rem));
+  }
+}
+@keyframes moving-up {
+  to {
+    transform: translateY(calc(var(--_moving-speed) * -2rem));
+  }
+}
+@keyframes fadeout {
+  to{
+      transform: translateX(-1rem);
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
