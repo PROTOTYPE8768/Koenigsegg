@@ -307,21 +307,80 @@
                      }
         }
     }
-}
-
-
-
-
-.escala-thirdpage {
-  
-
-  .Discover-buttons {
-    display: inline-block;
+    .Discover-buttons {
+    display: flex;
     margin-top: 4rem;
     padding: 1rem;
-    border: 1px solid;
-    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.223);
+    width: 12rem;
+    align-items: center;
+    
+
+    .arrow-container{
+      display: flex;
+      
+      width: 1.1rem;
+      
+      overflow: hidden;
+      position: relative;
+      i{
+          height: 16.54px;
+          width: 16.54px;
+          margin-top: 3px;
+          transform: translatex(-1rem);
+          transition: .2s ease;
+    
+      }  
+    }
+    &:hover{
+      border: 2px solid #f6bd00b3;
+      i{
+        transform: translateX(0rem);
+        animation: fadeout 0s ease .2s forwards;
+      }
+    }
   }
+.Discover-button {
+    display: flex;
+    margin-top: 4rem;
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.225);
+    width: 8rem;
+    
+
+
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s ease;
+    
+    .arrow-container{
+      display: flex;
+      
+      width: 10px;
+      
+      overflow: hidden;
+      position: relative;
+      i{
+          height: 16.54px;
+          width: 16.54px;
+          margin-top: 3px;
+          transform: translatex(-1rem);
+          transition: .2s ease;
+    
+      }  
+    }
+    &:hover{
+      border: 2px solid #f6bd00b3;
+      i{
+        transform: translateX(0rem);
+        animation: fadeout 0s ease .2s forwards;
+      }
+    }
+}
+.escala-thirdpage {
+  
+  
+  
   .third-part {
     
     padding: 5rem 5rem 10rem 10rem;
@@ -337,7 +396,7 @@
 
   .tech-ach {
     margin-bottom: 8rem;
-    font-size: 1.5rem;
+    font-size: 16.799px;
     line-height: 1.2rem;
     font-weight: 300;
   }
@@ -347,12 +406,12 @@
     font-size: 6rem;
     align-self: end;
     width: fit-content;
-    font-weight: 600;
-
+    font-weight: 500;
+    font-size: 106px;
     .in-house {
       position: absolute;
       bottom: 5rem;
-      right: 17rem;
+      right: 19.5rem;
       white-space: nowrap;
     }
   }
@@ -364,8 +423,53 @@
     p {
       width: 20rem;
       line-height: 1.5rem;
+      font-family: 'Host grotesk';
     }
   }
+  nav{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 1.2rem;
+    left: 0rem;
+    top: 8.2rem;
+    width: 16rem;
+    
+    
+    cursor: pointer;
+    
+    a{
+
+        font-family: "Host Grotesk";
+        font-size: 16.8px;
+        transition: .2s;
+       
+
+    }
+
+    .arrow-container{
+        display: flex;
+        width: 1rem;
+        overflow: hidden;
+        position: relative;
+        img{
+            filter: invert(1);
+            height: 16.54px;
+            width: 16.54px;
+            transform: translatex(-1rem);
+            transition: .2s ease;
+
+        }  
+    }
+    &:hover{
+        img{
+            transform: translateX(0rem);
+            animation: fadeout 0s ease .2s forwards;
+        }
+
+        
+    }
+ }
 
   img {
     --_moving-speed: 3;
@@ -374,9 +478,6 @@
     width: 100%;
   }
 }
-
-
-
 .escala-fourthpage {
   margin-top: 6rem;
     
@@ -386,6 +487,10 @@
         img{
             width: 100%;
         }
+        p{
+          font-family: 'Host grotesk';
+        }
+        
     }
   .fourth-part {
 
@@ -398,7 +503,9 @@
         flex: 1;
       }
     }
-
+    .main-top{
+      font-size: 16.799px;
+    }
     &:nth-of-type(even) {
       .part-wrapper {
         flex-direction: row-reverse;
@@ -410,6 +517,7 @@
 
       .main-top {
         text-align: start;
+        
       }
 
       .text-and-button {
@@ -433,15 +541,15 @@
     
     .main-top {
       font-weight: 300;
-      font-size: 1.5rem;
+      font-size: 16.799px;
       text-align: end;
     }
 
     .why-title {
       line-height: 3.5rem;
       font-size: 4rem;
-      font-weight: 600;
-
+      font-weight: 500;
+      font-size: 63.903px;
       span {
         margin-left: 8rem;
       }
@@ -462,19 +570,6 @@
   }
 }
 
-@keyframes moving-down {
-  to {
-    transform: translateY(calc(var(--_moving-speed) * 3rem));
-  }
-}
-
-@keyframes moving-up {
-  to {
-    transform: translateY(calc(var(--_moving-speed) * -2rem));
-  }
-}
-
-// Animations targeting both .third and .fourth sections
 .escala-thirdpage .text-and-button,
 .escala-fourthpage .text-and-button,
 .escala-thirdpage img,
@@ -483,18 +578,30 @@
   animation-range: cover 0% cover 100%;
 }
 
-
-
-
-
-
-
-
-
-
-//nagkakaroon ng margin tas nag iiba ng width
-@keyframes fadeout {
-    to{
-        transform: translateX(-1rem);
-    }
+@keyframes moving-down {
+  to {
+    transform: translateY(calc(var(--_moving-speed) * 3rem));
+  }
 }
+@keyframes moving-up {
+  to {
+    transform: translateY(calc(var(--_moving-speed) * -2rem));
+  }
+}
+@keyframes fadeout {
+  to{
+      transform: translateX(-1rem);
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
