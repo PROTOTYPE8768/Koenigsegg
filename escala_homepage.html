@@ -13,15 +13,42 @@
 </head>
 
 <body class="escala--body" >
-    <div class="green-background"></div>
+    <div class="green-background">
+      <div class="green-bg-container">
+        <div class="navigation">
+          <ul>
+            <li><a href="/torres_megacars.html">MEGACARS</a></li>
+            <li><a href="">TECHNOLOGY</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">HISTORY</a></li>
+          </ul>
+        </div>
+        <div class="header-secondary-links">
+          <span>
+            <ul>
+              <li>Dealer locator</li>
+              <li>Shop</li>
+              <li>Contact</li>
+            </ul>
+          </span>
+          <span>
+            <ul>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Factory tours</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
     <header>
         <div class="builtin--header">
             <div class="builtin--header_container">
-                <div class="header--logo"><img src="/dist/img/vector3.svg" alt=""></div>
+                <div class="header--logo"><a href="/escala_homepage.html"><img src="/dist/img/vector3.svg" alt=""></a></div>
                 <div class="header--menu--button_container">
                     <div class="header--menu--button">
-                        <span></span>
-                        <span></span>
+                        <span class="burger-button" ></span>
+                        <span class="burger-button" ></span>
                     </div>
                 </div>
             </div>
@@ -29,6 +56,7 @@
     </header>
 
     <main>
+<!-- first part -->
         <article class="escala--firstpage" >
             <div class="escala--firstpage_container">
                 <div class="escala-firstpage-main-content">
@@ -46,44 +74,46 @@
             </div>
         </article>
 
-        <article class="escala--secondpage" >
-            <div class="escala--secondpage_container">
-                <div class="secondpage--tablist-container">
-                    <ul class="secondpage--tab-list">
-                        <li class="tab--button">
-                            <span>Gemera</span>
-                        </li>
-                        <li class="tab--button">
-                            <span>Jesko Attack</span>
-                        </li>
-                        <li class="tab--button">
-                            <span>Jesko Absolut</span>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <div class="secondpage-tab-title">
-                    <div class="large-line"><span>Worlds first</span></div>
-                    <div class="large-line"><span>Mega GT for four</span></div>
-                </div>
-                <nav class="second-page-button" >
-                    <a href="">Discover more</a> 
-                    <div class="arrow-container" >
-                        <img src="/dist/img/download.svg" alt="">
-                        <img src="/dist/img/download.svg" alt="">
-                    </div>
-                </nav>
-                <nav class="second-page-bottom-button" >
-                    <a href="">Explore past and persent models</a> 
-                    <div class="arrow-container" >
-                        <img src="/dist/img/download.svg" alt="">
-                        <img src="/dist/img/download.svg" alt="">
-                    </div>
-                </nav>
-            </div>
-            
-        </article>
+<!-- second part -->
+<article class="escala--secondpage">
+  <div class="escala--secondpage_container">
+      <div class="secondpage--tablist-container">
+          <ul class="secondpage--tab-list">
+              <li class="tab--button active" data-bg="/dist/img/94c29aca8e7e6b5d_org2028129.jpeg" data-title="Mega GT for four" datatitle="Worlds first" >
+                  <span  >Gemera</span>
+              </li>
+              <li class="tab--button" data-bg="/dist/img/12HK-7334-Oskar20Bakke44.jpg" data-title="Track legend" datatitle="Road legal" >
+                  <span  >Jesko Attack</span>
+              </li>
+              <li class="tab--button" data-bg="/dist/img/Koenigsegg20Jesko20Absolut20-20Side202.JPG2.jpg" data-title="breaking barriers" datatitle="pushing limits">
+                  <span  >Jesko Absolut</span>
+              </li>
+              <span class="underline"></span>
+          </ul>
+      </div>
+      <div class="secondpage-tab-title">
+          <div class="large-line"><span class="tabtitle" >Worlds first</span></div>
+          <div class="large-line"><span class="tab-title">Mega GT for four</span></div>
+      </div>
+      <nav class="second-page-button">
+          <a href="#">Discover more</a>
+          <div class="arrow-container">
+              <img src="/dist/img/download.svg" alt="">
+              <img src="/dist/img/download.svg" alt="">
+          </div>
+      </nav>
+      <nav class="second-page-bottom-button">
+          <a href="#">Explore past and present models</a>
+          <div class="arrow-container">
+              <img src="/dist/img/download.svg" alt="">
+              <img src="/dist/img/download.svg" alt="">
+          </div>
+      </nav>
+  </div>
+</article>
 
+
+<!-- third part -->
         <article class="escala-thirdpage">
             <section class="third-part">
               <div class="part-wrapper">
@@ -119,7 +149,7 @@
               </div>
             </section>
         </article>
-
+<!-- fourth part -->
         <article class="escala-fourthpage">
             <section class="fourth-part">
               <div class="part-wrapper">
@@ -174,7 +204,7 @@
                   </div>
                 </div>
               </div>
-              <hr />
+              
             </section>
         </article>
           
@@ -187,7 +217,9 @@
     <footer>
         <div class="builtin--footer">
             <div class="builtin--footer_container">
-
+              <div class="footer-top-line">
+                <span></span>
+              </div>
               <div class="footer-title-and-links-container">
                 <div class="footertitle">
                   <span>THE</span>
@@ -198,10 +230,10 @@
 
                 <div class="footer-navigation">
                   <ul>
-                    <li>Megacars</li>
-                    <li>Technology</li>
-                    <li>About</li>
-                    <li>History</li>
+                    <li><a href="torres_megacars.html">Megacars</a> </li>
+                    <li> <a href="">Technology</a> </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">History</a></li>
                   </ul>
                 </div>
 
@@ -238,7 +270,7 @@
               </div>
 
               <div class="line-and-copyright-container">
-                <span></span>
+                <span class="breakline" ></span>
 
                 <div class="copyright-container">
                   <p>Copyright © since 1994 – Koenigsegg Automotive AB</p>
