@@ -1,15 +1,9 @@
-.green-background {
-    position: fixed;
-    background: #687c7b;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    display: none;
-    
+body {
+  &.open{
+    overflow-y: hidden;
+  }
 }
-.green-background.open{
-      display: block;
-}
+
 .escala--body{
     background: black;
     list-style: none;
@@ -126,6 +120,8 @@
         object-fit: cover;
         height: 155vh;
         background-size: 180%;
+       
+        
         &::after {
             content: "";
             top: 0;
@@ -155,15 +151,30 @@
                     height: 48.23px;
                     
                     border-bottom: 1px solid rgba(255, 255, 255, 0.44);
+                    .underline{
+                      display: block;
+                      width: 10rem;
+                      height: 1px;
+                      background: white;
+                      position: absolute;
+                      margin-top: 3rem;
+                    }
                     .tab--button{
                         display: flex;
                         gap: 1rem;
                         font-family: 'host grotesk';
+                        &.active{
+                          span{
+                            color: white;
+                            
+                          }
+                        }
                         
                         span{
-                            width: 179.81px;
+                          width: 190.81px;
+                          color: rgba(255, 255, 255, 0.44);
                             font-size: 19.5px;
-                            
+                            cursor: pointer;
                             
                         }
                         
@@ -171,12 +182,12 @@
                     }
                     :nth-child(2){
                         span{
-                            width: 222px;
+                            width: 200px;
                         }
                     }
                     :nth-child(3){
                         span{
-                            width: 233.9px;
+                            width: 222.9px;
                         }
                     }
                     
@@ -306,7 +317,27 @@
                         }
                      }
         }
+
     }
+   
+  
+      .underline {
+          transition: transform 0.3s ease;
+          width: 10rem;
+          height: 1px;
+          background: white;
+          position: absolute;
+          margin-top: 3rem;
+          transform: translateX(0); // Initial position for Gemera tab
+      }
+  
+      .secondpage-tab-title {
+          .tab-title {
+              transition: opacity 0.3s ease;
+          }
+      }
+  }
+    
     .Discover-buttons {
     display: flex;
     margin-top: 4rem;
@@ -480,7 +511,7 @@
 }
 .escala-fourthpage {
   margin-top: 6rem;
-    
+    height: 260vh;
     background: white;
     *{
         color: black;
@@ -567,6 +598,7 @@
 
   hr {
     margin-top: 8rem;
+  
   }
 }
 
@@ -593,7 +625,13 @@
       transform: translateX(-1rem);
   }
 }
+
+.tab--button .active{
+  span{
+    color: white;
+  }
 }
+
 
 
 

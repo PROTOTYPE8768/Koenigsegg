@@ -1,7 +1,7 @@
 .builtin--footer{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    
     background: white;
     *{
         color: black;
@@ -10,7 +10,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        .footer-top-line{
+            span{
+                display: block;
+                width: 72vw;
+                height: 1px;
+                background: rgba(0, 0, 0, 0.256);
+                
+                margin-bottom: 7rem;
+
+            }
+        }
         .footer-title-and-links-container{
             display: flex;
             width: 72vw;
@@ -24,6 +34,7 @@
                 span{
                     font-size: 77.708px;
                     width: 356.65px;
+                    
                     &:nth-child(2){
                         text-align: end;
                     }
@@ -38,8 +49,47 @@
                     flex-direction: column;
                     gap: .8rem;
                     li{
-                        font-size: 18.8485px;
+                        a{
+                            font-size: 18.8485px;
                         font-family: 'Host grotesk';
+                        }
+                        cursor: pointer;
+                        &::after{
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: .8px;
+                            background: black;
+                            transition: .5s ease;
+                            
+                        }
+                        &:hover{
+                            &:nth-child(1){
+                                &::after{
+                                    width: 85px;
+                                    height: .8px;
+                                }
+                            }
+                            &:nth-child(2){
+                                &::after{
+                                    width: 100px;
+                                    height: .8px;
+                                }
+                            }
+                            &:nth-child(3){
+                                &::after{
+                                    width: 55px;
+                                    height: .8px;
+                                }
+                            }
+                            &:nth-child(4){
+                                &::after{
+                                    width: 55px;
+                                    height: .8px;
+                                }
+                            }
+                            
+                        }
                     }
                 }
             }
@@ -49,14 +99,73 @@
                 span{
                     height: 9rem;
                     width: 9.5rem;
-                    
+                    &:nth-child(2){
+                        ul{
+                            li{
+                                cursor: pointer;
+                                &:hover{
+                                    &::after{
+                                        width: 50px;
+                                        
+                                    }
+                                    &:nth-child(2){
+                                        &::after{
+                                            width: 30px;
+                                            
+                                        }
+                                    }
+                                    &:nth-child(1){
+                                        &::after{
+                                            width: 45px;
+                                            
+                                        }
+                                    }
+                                    &:nth-child(3){
+                                        &::after{
+                                            width: 75px;
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     ul{
                         display: flex;
                         flex-direction: column;
                         gap: .5rem;
+                        
                         li{
+                            cursor: pointer;
                             font-size: 12.4414px;
                             font-family: 'Host Grotesk';
+                            &::after{
+                                content: "";
+                                display: block;
+                                width: 0;
+                                height: .8px;
+                                background: black;
+                                transition: .5s ease;
+                            }
+                            &:hover{
+                                &::after{
+                                    width: 50px;
+                                    
+                                }
+                                &:nth-child(2){
+                                    &::after{
+                                        width: 30px;
+                                        
+                                    }
+                                }
+                                &:nth-child(1){
+                                    &::after{
+                                        width: 80px;
+                                        
+                                    }
+                                }
+                            }
+                            
                         }
                     }
                     &:nth-child(2){
@@ -75,6 +184,7 @@
             width: 72vw;
             margin-top: 6rem;
             justify-content: space-between;
+            align-items: center;
             .socialmedia{
                 display: flex;
                 gap: 1rem;
@@ -86,7 +196,59 @@
             }
         }
         .line-and-copyright-container{
-            
+            .breakline{
+                margin-top: 3rem;
+                display: block;
+                width: 72vw;
+                height: 1px;
+                background: rgba(0, 0, 0, 0.256);
+                
+            }
+            .copyright-container{
+                display: flex;
+                flex-direction: row;
+                font-size: 9.308px;
+                justify-content: space-between;
+                align-items: center;
+                *{
+                    font-family: 'Host Grotesk';
+                }
+                ul{
+                    display: flex;
+                    padding: 3rem;
+                    gap: 4rem;
+                    li{
+                        cursor: pointer;
+                        &::after{
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: .8px;
+                            background: black;
+                            transition: .5s ease;
+                            
+                        }
+                        &:hover{
+                            
+                            &:nth-child(1){
+                                &::after{
+                                    width: 34px;
+                                }
+                            }
+                            &:nth-child(2){
+                                &::after{
+                                    width: 55px;
+                                }
+                            }
+                            &:nth-child(3){
+                                &::after{
+                                    width: 42px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
