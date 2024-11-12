@@ -1142,7 +1142,7 @@ body.open {
   }
   .torres-firstpage .torres-firstpage-container .title-and-images-container .images-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.3rem;
     padding-left: 1.4rem;
   }
