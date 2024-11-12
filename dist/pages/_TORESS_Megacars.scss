@@ -11,12 +11,13 @@
 
 .torres-firstpage{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     .torres-firstpage-container{
         display: flex;
         flex-direction: row;
         
-        padding-top: 10rem;
+        padding-top: 12rem;
         justify-content: center;
         .torres-button-container{
             display: flex;
@@ -75,8 +76,8 @@
             .images-heading{
                 display: flex;
                 justify-content: end;
-                width: 67%;
-                margin-bottom: 3rem;
+                width: 68.5%;
+                margin-bottom: 5.3rem;
                 p{
                     font-size: 39px;
                     text-transform: uppercase;
@@ -86,8 +87,8 @@
             .images-container{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap: 1rem;
-                
+                gap: 1.3rem;
+                padding-left: 1.4rem;
                 
                 
                 
@@ -99,19 +100,84 @@
                     max-height: 593px;
                     overflow: hidden;
                     position: relative;
+                    
                     &:hover{
+                        
                         img{
-                            width: 600px;
-                            height: 613px;
+                            transform: scale(1.06);
+                            
+                        }
+                        p{
+                            &::after{
+                                margin-top: 1.1rem;
+                            }
                         }
                     }
                     img{
                         width: 554px;
                         height: 593px;
                         transition: .5s ease;
+                        
+                        
+                    }
+                    .overlay {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 40%;    
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.719), transparent); 
+                        pointer-events: none;
+                        z-index: 1;
                     }
                     p{
                         position: absolute;
+                        height: 2rem;
+                        width: 21vw;
+                        margin-bottom: 5rem;
+                        z-index: 2;
+                        
+                        transition: .2s ease;
+                        &::after{
+                            content: "";
+                            height: 1px;
+                            width: 21vw;
+                            background: rgba(255, 255, 255, 0.832);
+                            display: block;
+                            margin-top: 1.8rem;
+                            transition: .4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .torres-firstpage-container:nth-child(2){
+        background: white;
+        padding-left: 13rem;
+        padding-bottom: 10rem;
+        *{
+            color: black;
+        }
+        .title-and-images-container{
+            .images-container{
+                .img-and-content-container{
+                    img{
+                        height: 215px;
+                        filter: brightness(0.6);
+                    }
+                    P{
+                        position: absolute;
+                        height: 2rem;
+                        width: 32vw;
+                        margin-bottom: 1rem;
+                        z-index: 2;
+                        
+                        transition: .2s ease;
+                        color: white;
+                        &::after{
+                            display: none;
+                        }
                     }
                 }
             }
