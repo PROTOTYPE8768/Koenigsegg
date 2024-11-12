@@ -1082,7 +1082,7 @@ body.open {
   }
   .torres-firstpage .torres-firstpage-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 12rem;
     justify-content: center;
   }
@@ -1094,7 +1094,7 @@ body.open {
   }
   .torres-firstpage .torres-firstpage-container .torres-button-container nav {
     display: flex;
-    margin-bottom: 40rem;
+    margin-bottom: 4rem;
     height: 5rem;
     text-align: start;
     gap: 1.2rem;
@@ -1150,8 +1150,8 @@ body.open {
     display: flex;
     justify-content: center;
     align-items: end;
-    max-width: 554px;
-    max-height: 593px;
+    max-width: 423px;
+    max-height: 452px;
     overflow: hidden;
     position: relative;
   }
@@ -1162,8 +1162,8 @@ body.open {
     margin-top: 1.1rem;
   }
   .torres-firstpage .torres-firstpage-container .title-and-images-container .images-container .img-and-content-container img {
-    width: 554px;
-    height: 593px;
+    width: 423px;
+    height: 452px;
     transition: 0.5s ease;
   }
   .torres-firstpage .torres-firstpage-container .title-and-images-container .images-container .img-and-content-container .overlay {
@@ -1195,14 +1195,50 @@ body.open {
   }
   .torres-firstpage .torres-firstpage-container:nth-child(2) {
     background: white;
-    padding-left: 13rem;
     padding-bottom: 10rem;
+  }
+  .torres-firstpage .torres-firstpage-container:nth-child(2) .torres-button-container {
+    display: flex;
+    padding-right: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .torres-firstpage .torres-firstpage-container:nth-child(2) .torres-button-container nav {
+    display: flex;
+    text-align: start;
+    gap: 1.2rem;
+    flex-direction: column-reverse;
+    width: 10rem;
+    cursor: pointer;
+  }
+  .torres-firstpage .torres-firstpage-container:nth-child(2) .torres-button-container nav a {
+    font-family: "Host Grotesk";
+    font-size: 15.5px;
+    transition: 0.2s;
+  }
+  .torres-firstpage .torres-firstpage-container:nth-child(2) .torres-button-container nav .arrow-container {
+    display: flex;
+    width: 1rem;
+    transform: rotate(90deg);
+    overflow: hidden;
+    position: relative;
+  }
+  .torres-firstpage .torres-firstpage-container:nth-child(2) .torres-button-container nav .arrow-container img {
+    filter: invert(1);
+    height: 18.54px;
+    width: 18.54px;
+    transform: translatex(-1.2rem);
+    transition: 0.2s ease;
+  }
+  .torres-firstpage .torres-firstpage-container:nth-child(2) .torres-button-container nav:hover img {
+    transform: translateX(0rem);
+    animation: fadeout 0s ease 0.2s forwards;
   }
   .torres-firstpage .torres-firstpage-container:nth-child(2) * {
     color: black;
   }
   .torres-firstpage .torres-firstpage-container:nth-child(2) .title-and-images-container .images-container .img-and-content-container img {
-    height: 215px;
+    height: 164px;
     filter: brightness(0.6);
   }
   .torres-firstpage .torres-firstpage-container:nth-child(2) .title-and-images-container .images-container .img-and-content-container P {
@@ -1227,7 +1263,7 @@ body.open {
   .torres-firstpage .torres-firstpage-container {
     display: flex;
     flex-direction: row;
-    padding-top: 12rem;
+    padding-top: 11rem;
     justify-content: center;
   }
   .torres-firstpage .torres-firstpage-container .torres-button-container {
