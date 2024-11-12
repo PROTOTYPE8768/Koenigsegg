@@ -1263,7 +1263,7 @@ body.open {
   .torres-firstpage .torres-firstpage-container {
     display: flex;
     flex-direction: row;
-    padding-top: 12rem;
+    padding-top: 11rem;
     justify-content: center;
   }
   .torres-firstpage .torres-firstpage-container .torres-button-container {
