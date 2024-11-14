@@ -10,6 +10,29 @@ burger.addEventListener("click", () => {
     burgerButtons[1].classList.toggle("open"); 
 });
 
+// let lastScroll = 0;
+// const header = document.querySelector('.builtin--header');
+
+// window.addEventListener('scroll', () => {
+//     const currentScroll = window.pageYOffset;
+
+//     if (currentScroll <= 0) {
+        
+//         header.classList.add('hidden-header');
+//     } else if (currentScroll > lastScroll) {
+        
+//         header.classList.add('hidden-header');
+//     } else {
+        
+//         header.classList.remove('hidden-header');
+//     }
+
+    
+//     lastScroll = currentScroll;
+// });
+
+
+
 
 
 
