@@ -18,15 +18,21 @@
             display: flex;
             flex-direction: column;
             
-            padding-top: 12rem;
+            padding-top: 8.6rem;
             justify-content: center;
             .torres-button-container{
                 display: flex;
-                padding-right: 3rem;
+                margin-right: 20rem;
                 align-items: center;
                 justify-content: center;
-                nav{
+                p{
                     display: flex;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-family: 'Gustavo';
+                }
+                nav{
+                    display: none;
                     margin-bottom: 4rem;
                    height: 5rem;
                    text-align: start;
@@ -42,15 +48,17 @@
                         transition: .2s;
             
                     }
-            
+                    
                     .arrow-container{
                         display: flex;
                         
                         width: 1rem;
+                        
                         transform: rotate(90deg);
                         overflow: hidden;
                         position: relative;
                         
+
                         img{
                             filter: invert(1);
                             height: 18.54px;
@@ -73,13 +81,84 @@
             .title-and-images-container{
                 display: flex;
                 flex-direction: column;
-                
+                padding-left: .5rem;
                 .images-heading{
                     display: flex;
                     justify-content: end;
                     width: 68.5%;
-                    margin-bottom: 5.3rem;
+                    margin-bottom: 2rem;
+                    margin-top: 3rem;
+                    margin-left: -5.5rem;
+                    nav{
+                        display: flex;
+                        
+                        
+                        margin-bottom: 0rem;
+                       height: 5rem;
+                       
+                        gap: 3rem;
+                        flex-direction: row-reverse;
+                        
+                        
+                        align-items: center;
+                        cursor: pointer;
+                        
+                        a{
+                            font-family: "Host Grotesk";
+                            font-size: 14px;
+                            transition: .2s;
+                            &::after{
+                                content: "";
+                                display: block;
+                                
+                                
+                                width: 3.5rem;
+                                border: 1.6px solid rgba(255, 255, 255, 0.199);
+                                height: 3.5rem;
+                                position: absolute;
+                                margin-top: -3.15rem;
+                                margin-left: -5.3rem;
+                                border-image: linear-gradient(45deg, black 1%, rgba(255, 255, 255, 0.353) 70%, transparent 70%) 1;
+                                transition: .2s ease;
+                                
+                            }
+                        }
+                        
+                        .arrow-container{
+                            display: flex;
+                            
+                            width: 1rem;
+                            transform: rotate(90deg);
+                            overflow: hidden;
+                            position: relative;
+                            
+                            img{
+                                filter: invert(1);
+                                height: 18.54px;
+                                width: 18.54px;
+                                transform: translatex(-1.2rem);
+                                transition: .2s ease;
+                                
+                                
+                            }  
+                        }
+                        &:hover{
+                            img{
+                                transform: translateX(0rem);
+                                
+                                animation: fadeout 0s ease .2s forwards;
+                            }
+                            a{
+                                &::after{
+                                    border: 1.6px solid #f6be00;
+                                    animation: border-animation 1s linear infinite; 
+                                }
+                            }
+                            
+                        }
+                    }
                     p{
+                        display: none;
                         font-size: 39px;
                         text-transform: uppercase;
                         font-family: 'Gustavo';
@@ -246,20 +325,23 @@
             display: flex;
             flex-direction: row;
             
-            padding-top: 11rem;
+            padding-top: 12rem;
             justify-content: center;
             .torres-button-container{
                 display: flex;
                 padding-right: 3rem;
+                margin-right: 0rem;
                 align-items: center;
                 justify-content: center;
-                
+                p{
+                    display: none;
+                }
                 nav{
                     display: flex;
                     margin-bottom: 40rem;
-                   height: 5rem;
+                   height: 7rem;
                    text-align: start;
-                    gap: 1.2rem;
+                    gap: 2.3rem;
                     flex-direction: column-reverse;
                     
                     width: 10rem;
@@ -269,13 +351,29 @@
                         font-family: "Host Grotesk";
                         font-size: 15.5px;
                         transition: .2s;
+                        &::after{
+                            content: "";
+                            display: flex;
+                            
+                            
+                            width: 3.5rem;
+                            border: 1.6px solid rgba(255, 255, 255, 0.199);
+                            height: 3.5rem;
+                            position: absolute;
+                            margin-top: -7.15rem;
+                            border-image: linear-gradient(45deg, black 1%, rgba(255, 255, 255, 0.353) 70%, transparent 70%) 1;
+                            transition: .2s ease;
+                            
+                        }
             
                     }
             
                     .arrow-container{
                         display: flex;
-                        
+                        height: 1rem;
                         width: 1rem;
+                        
+                        margin-left: 1.4rem;
                         transform: rotate(90deg);
                         overflow: hidden;
                         position: relative;
@@ -287,12 +385,19 @@
                             transform: translatex(-1.2rem);
                             transition: .2s ease;
                             
+                            
                         }  
                     }
                     &:hover{
                         img{
                             transform: translateX(0rem);
                             animation: fadeout 0s ease .2s forwards;
+                        }
+                        a{
+                            &::after{
+                                border: 1.6px solid #f6be00;
+                                animation: border-animation 1s linear infinite; 
+                            }
                         }
             
                         
@@ -302,13 +407,21 @@
             .title-and-images-container{
                 display: flex;
                 flex-direction: column;
+                padding-left: 0rem;
                 
                 .images-heading{
                     display: flex;
                     justify-content: end;
                     width: 68.5%;
                     margin-bottom: 5.3rem;
+                    
+                    margin-top: 0rem;
+                    margin-left: 0rem;
+                    nav{
+                        display: none;
+                    }
                     p{
+                        display: flex;
                         font-size: 39px;
                         text-transform: uppercase;
                         font-family: 'Gustavo';
@@ -415,3 +528,35 @@
         }
     }
 }
+
+
+
+
+
+@keyframes moving-down {
+    to {
+      transform: translateY(calc(var(--_moving-speed) * 3rem));
+    }
+  }
+  @keyframes moving-up {
+    to {
+      transform: translateY(calc(var(--_moving-speed) * -2rem));
+    }
+  }
+  @keyframes border-animation {
+    0% {
+      border-image: linear-gradient(0deg, #f6be00, black) 1;
+    }
+    25% {
+      border-image: linear-gradient(90deg, #f6be00, black) 1;
+    }
+    50% {
+      border-image: linear-gradient(180deg, #f6be00, black) 1;
+    }
+    75% {
+      border-image: linear-gradient(270deg, #f6be00, black) 1;
+    }
+    100% {
+      border-image: linear-gradient(360deg, #f6be00, black) 1;
+    }
+  }
