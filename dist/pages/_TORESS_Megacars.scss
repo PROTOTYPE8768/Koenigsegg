@@ -543,6 +543,11 @@
       transform: translateY(calc(var(--_moving-speed) * -2rem));
     }
   }
+  @keyframes fadeout {
+    to{
+        transform: translateX(-1rem);
+    }
+  }
   @keyframes border-animation {
     0% {
       border-image: linear-gradient(0deg, #f6be00, black) 1;
