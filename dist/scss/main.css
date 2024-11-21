@@ -2486,4 +2486,7 @@ body.open {
   .green-background.open .green-bg-container .header-secondary-links span ul li:nth-child(3):hover::after {
     width: 62px;
   }
+}
+.technology-page_body * {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
