@@ -1,3 +1,646 @@
+
+@include mediaQuery(390px){
+  
+  .escala--firstpage{
+      display: flex;
+      background-image: url('/dist/img/CC85020in20the20desert20Gradient2.jpeg');
+      background-repeat: no-repeat;
+      background-position: center;
+      object-fit: cover;
+      background-size: 110%;
+      height: 100vh;
+      &::after {
+          content: "";
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, black);
+          pointer-events: none;
+      }
+      .escala--firstpage_container{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          
+          position: absolute;
+          .escala-firstpage-main-content{
+              display: flex;
+              
+              
+              
+              .firstpage-main-content-container{
+                  display: flex;
+                  h1{
+                      position: absolute;
+                      left: 1.86rem;
+                      top: 11.55rem;
+                      img{
+                          width: 333.24px;
+                          height: 71.5px;
+                          
+                      }
+                  }
+                  nav{
+                      display: flex;
+                      align-items: center;
+                      position: absolute;
+                      gap: 1.2rem;
+                      right: 1.9rem;
+                      top: 30.7rem;
+                      cursor: pointer;
+                      a{
+                          font-family: "Host Grotesk";
+                          font-size: 14px;
+                          transition: .2s;
+                          &::after{
+                              content: "";
+                              display: block;
+                              width: 0px;
+                              height: 1px;
+                              margin-top: 5px;
+                              transition: .4s ease;
+                          }
+                      }
+      
+                      .arrow-container{
+                          display: flex;
+                          margin-bottom: 5px;
+                          width: 1rem;
+                          
+                          overflow: hidden;
+                          position: relative;
+                          img{
+                              filter: invert(1);
+                              height: 16.54px;
+                              width: 16.54px;
+                              transform: translatex(-1rem);
+                              transition: .2s ease;
+      
+                          }  
+                      }
+                      &:hover{
+                          img{
+                              transform: translateX(0rem);
+                              animation: fadeout 0s ease .2s forwards;
+                          }
+                          a{
+                              
+                              &::after{
+                                  content: "";
+                                  display: block;
+                                  width: 58px;
+                                  height: 1px;
+                                  background: #f6be00;
+                                  margin-top: 5px;
+                              }
+                          }
+                          
+                      }
+                  }
+                  
+              }
+          }
+      }
+  }
+  .escala--secondpage{
+      display: flex;
+      justify-content: center;
+      
+      background-image: url('/dist/img/94c29aca8e7e6b5d_org2028129.jpeg');
+      background-repeat: no-repeat;
+      background-position:55.5% center;
+      object-fit: cover;
+      height: 100vh;
+      background-size: 200%;
+    
+      
+      &::after {
+          content: "";
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: 
+          linear-gradient(to top, rgba(0, 0, 0, 0) 40%, black),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, black);
+          pointer-events: none;
+      }
+      
+      .escala--secondpage_container{
+          display: flex;
+          margin-top: 6.5rem;
+          position: absolute;
+          
+          .secondpage--tablist-container{
+              display: flex;
+              position: absolute;
+              justify-content: center;
+              
+              .secondpage--tab-list{
+                  position: absolute;
+                  display: flex;
+                  width: 87vw;
+                  gap: 1rem;
+                  height: 48.23px;
+                  
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.44);
+                  .underline{
+                    display: block;
+                    width: 6rem;
+                    height: 1px;
+                    background: white;
+                    position: absolute;
+                    margin-top: 3rem;
+                  }
+                  .tab--button{
+                      display: flex;
+                      gap: 1rem;
+                      font-family: 'host grotesk';
+                      &.active{
+                        span{
+                          color: white;
+                          
+                        }
+                      }
+                      
+                      span{
+                        width: 87.81px;
+                        color: rgba(255, 255, 255, 0.44);
+                          font-size: 16.5px;
+                          cursor: pointer;
+                          
+                      }
+                      
+                      
+                  }
+                  :nth-child(2){
+                      span{
+                          width: 110px;
+                      }
+                  }
+                  :nth-child(3){
+                      span{
+                          width: 140.9px;
+                      }
+                  }
+                  
+              }
+          }
+          .secondpage-tab-title{
+              display: flex;
+              position: absolute;
+              right: -12rem;
+              margin-top: 5.5rem;
+              flex-direction: column;
+              width: 394px;
+              line-height: 1.7rem;
+      
+              .large-line{
+                  display: flex;
+                  flex-direction: column;
+                  span{
+                      font-size: 32.908px;
+                      text-transform: uppercase;
+                      font-family: 'Gustavo';
+                  }
+                  
+              }
+              .large-line:nth-child(2){
+                  text-align: end;
+              }
+          }
+          nav{
+              display: flex;
+              align-items: center;
+              position: absolute;
+              gap: 1.2rem;
+              left: -7.3rem;
+              top: 11rem;
+              width: 10rem;
+              cursor: pointer;
+              
+              a{
+                  font-family: "Host Grotesk";
+                  font-size: 15.5px;
+                  transition: .2s;
+      
+              }
+      
+              .arrow-container{
+                  display: flex;
+                  
+                  width: 1rem;
+                  
+                  overflow: hidden;
+                  position: relative;
+                  img{
+                      filter: invert(1);
+                      height: 16.54px;
+                      width: 16.54px;
+                      transform: translatex(-1rem);
+                      transition: .2s ease;
+      
+                  }  
+              }
+              &:hover{
+                  img{
+                      transform: translateX(0rem);
+                      animation: fadeout 0s ease .2s forwards;
+                  }
+      
+                  
+              }
+          }
+          .second-page-bottom-button{
+                      display: flex;
+                      align-items: center;
+                      position: absolute;
+                      gap: 1.2rem;
+                      width: 290.48px;
+                      left: -13rem;
+                      top: 33.4rem;
+                      cursor: pointer;
+                      a{
+                          font-family: "Host Grotesk";
+                          font-size: 14.2px;
+                          transition: .2s;
+                          &::after{
+                              content: "";
+                              display: block;
+                              width: 0px;
+                              height: 1px;
+                              margin-top: 5px;
+                              transition: .4s ease;
+                          }
+                      }
+      
+                      .arrow-container{
+                          display: flex;
+                          margin-bottom: 5px;
+                          width: 1rem;
+                          
+                          overflow: hidden;
+                          position: relative;
+                          img{
+                              filter: invert(1);
+                              height: 16.54px;
+                              width: 16.54px;
+                              transform: translatex(-1rem);
+                              transition: .2s ease;
+      
+                          }  
+                      }
+                      &:hover{
+                          img{
+                              transform: translateX(0rem);
+                              animation: fadeout 0s ease .2s forwards;
+                          }
+                          a{
+                              
+                              &::after{
+                                  content: "";
+                                  display: block;
+                                  width: 210.8px;
+                                  height: 1px;
+                                  background: #f6be00;
+                                  margin-top: 5px;
+                              }
+                          }
+                          
+                      }
+                  }
+      }
+
+  }
+
+
+  .underline {
+      transition: transform 0.3s ease;
+      width: 10rem;
+      height: 1px;
+      background: white;
+      position: absolute;
+      margin-top: 3rem;
+      transform: translateX(0); 
+  }
+
+  .secondpage-tab-title {
+      .tab-title {
+          transition: opacity 0.3s ease;
+      }
+  }
+  .escala-thirdpage {
+    .third-part {
+      
+      padding: 5rem 5rem 3rem 10rem;
+    }
+  
+    .part-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .tech-ach {
+      position: absolute;
+      margin-bottom: 48rem;
+      
+      font-size: 16.799px;
+      line-height: 1.2rem;
+      font-weight: 300;
+      margin-left: -8rem;
+    }
+  
+    .title-innovations {
+      position: absolute;
+      font-size: 6rem;
+      align-self: end;
+      width: 9rem;
+      font-weight: 500;
+      font-size: 36px;
+      right: 15rem;
+      margin-bottom: 40rem;
+      .in-house {
+        position: absolute;
+        bottom: 1.6rem;
+        right: 2.5rem;
+        white-space: nowrap;
+      }
+    }
+  
+    .text-and-button {
+      display: block;
+      margin-left: -7rem;
+      margin-top: 3rem;
+      animation: moving-down ease-in-out;
+      --_moving-speed: 1.;
+    
+      p {
+        width: 25rem;
+        line-height: 1.5rem;
+        font-family: 'Host grotesk';
+      }
+    }
+    nav{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      gap: 1.2rem;
+      left: 0rem;
+      top: 8.2rem;
+      width: 16rem;
+      
+      
+      cursor: pointer;
+      
+      a{
+  
+          font-family: "Host Grotesk";
+          font-size: 16.8px;
+          transition: .2s;
+         
+  
+      }
+  
+      .arrow-container{
+          display: flex;
+          width: 1rem;
+          overflow: hidden;
+          position: relative;
+          img{
+              filter: invert(1);
+              height: 16.54px;
+              width: 16.54px;
+              transform: translatex(-1rem);
+              transition: .2s ease;
+  
+          }  
+      }
+      &:hover{
+          img{
+              transform: translateX(0rem);
+              animation: fadeout 0s ease .2s forwards;
+          }
+  
+          
+      }
+   }
+  
+    img {
+      margin-top: 14rem;
+      right: 5rem;
+      margin-left: -4.5rem;
+      animation: moving-up ease-in-out;
+      width: 400px;
+    }
+  }
+  .escala-fourthpage {
+    display: none;
+    margin-top: 6rem;
+      height: 260vh;
+      background: white;
+      *{
+          color: black;
+          img{
+              width: 100%;
+          }
+          p{
+            font-family: 'Host grotesk';
+          }
+          
+      }
+    .fourth-part {
+  
+      padding: 5rem 10rem 10rem 10rem;
+      
+      .part-wrapper {
+        display: flex;
+  
+        > * {
+          flex: 1;
+        }
+      }
+      .main-top{
+        font-size: 16.799px;
+      }
+      &:nth-of-type(even) {
+        .part-wrapper {
+          flex-direction: row-reverse;
+        }
+  
+        .img-wrapper {
+          text-align: end;
+        }
+  
+        .main-top {
+          text-align: start;
+          
+        }
+  
+        .text-and-button {
+          align-self: center;
+          margin-left: 0;
+        }
+      }
+    }
+  
+    img {
+      max-width: 80%;
+      --_moving-speed: 4;
+      animation: moving-up ease-in-out;
+    }
+  
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 1.7rem;
+      
+      .main-top {
+        font-weight: 300;
+        font-size: 16.799px;
+        text-align: end;
+      }
+  
+      .why-title {
+        line-height: 3.5rem;
+        font-size: 4rem;
+        font-weight: 500;
+        font-size: 63.903px;
+        span {
+          margin-left: 8rem;
+        }
+      }
+  
+      .text-and-button {
+        max-width: 20rem;
+        place-self: end;
+        margin-right: 6rem;
+  
+        --_moving-speed: 0.3;
+        animation: moving-down ease-in-out;
+      }
+    }
+  
+    hr {
+      margin-top: 8rem;
+    
+    }
+  }
+  .escala-fifthpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background: white;
+    .escala-fifthpage-container{
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      span{
+        color: black;
+        font-family: 'Gustavo';
+        font-size: 14px;
+        margin-bottom: 4rem;
+        margin-top: 2.7rem;
+      }
+      .fifthpage-heading{
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5rem;
+        margin-bottom: 4rem;
+        span{
+          margin-top: 0rem;
+          color: black;
+          font-family: 'Gustavo';
+          font-size: 32px;
+          width: 222px;
+          margin-bottom: 0rem;
+          &:nth-child(2){
+            display: flex;
+            justify-content: end;
+          }
+        }
+      }
+      .fifthpage-img-container{
+
+        img{
+          width: 350px;
+          height: 540px;
+          margin-bottom: 4rem;
+        }
+      }
+      .fifthpage-info{
+        display: flex;
+        p{
+          color: black;
+          font-family: 'Host Grotesk';
+        }
+      }
+      nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.7rem;
+        gap: 1.2rem;
+        border: 2px solid rgba(0, 0, 0, 0.241);
+        transition: .5s ease;
+        &:hover{
+          border: 2px solid #f6be00;
+
+        }
+        padding: 1rem;
+        width: 10rem;
+        cursor: pointer;
+        
+        a{
+            font-family: "Host Grotesk";
+            font-size: 15.5px;
+            transition: .2s;
+            color: black;
+        }
+
+        .arrow-container{
+            display: flex;
+            
+            width: 1rem;
+            
+            overflow: hidden;
+            position: relative;
+            img{
+                filter: invert(0);
+                height: 16.54px;
+                width: 16.54px;
+                transform: translatex(-1rem);
+                transition: .2s ease;
+
+            }  
+        }
+        &:hover{
+            img{
+                transform: translateX(0rem);
+                animation: fadeout 0s ease .2s forwards;
+            }
+
+            
+        }
+    }
+    }
+    .escala-fifthpage-container{
+      &:nth-child(2){
+        .fifthpage-img-container{
+          display: flex;
+          justify-content: end;
+        }
+        .fifthpage-heading{
+          span{
+            width: 256px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+}
 @include mediaQuery($break-sm){
   
       .escala--firstpage{
@@ -137,7 +780,7 @@
                   .secondpage--tab-list{
                       position: absolute;
                       display: flex;
-                      width: 85.5vw;
+                      width: 87vw;
                       gap: 1rem;
                       height: 48.23px;
                       
@@ -173,7 +816,7 @@
                       }
                       :nth-child(2){
                           span{
-                              width: 130px;
+                              width: 110px;
                           }
                       }
                       :nth-child(3){
